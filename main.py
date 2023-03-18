@@ -11,8 +11,8 @@ import urllib.parse
 from bs4 import BeautifulSoup
 import json
 
-openai.api_key = "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"
-BOT_TOKEN = "MTA3MzY0NjkxODkwOTA0Mjc0OA.GYsEVb.7KjNfPUFytTLl7312f-Xb8iA1zDr2B0tO54CQ0"
+openai.api_key = ""
+BOT_TOKEN = ""
 CHANNEL_ID = 1030510177503420547
 
 
@@ -95,8 +95,7 @@ async def server(ctx):
     user = client.get_user(int(user_id))
 
     dm_channel = await ctx.author.create_dm()
-    await dm_channel.send('This server is about an ark server named Still Chill '
-                          'whose owners are Hyplayer(epro) and iXone(germ)')
+    await dm_channel.send('**Enter server Description**')
 
 
 @bot.command()
